@@ -1,5 +1,5 @@
-Drop logo files here:
+Logo files (already committed):
 
-- legacy-ascend-submark.svg   — small sun/moon mark used in the nav (placeholder shipped — overwrite)
-- legacy-ascend-wordmark.svg  — "LEGACY LIFE COACHING" wordmark (optional; nav uses text fallback)
-- legacy-ascend-arch.svg      — arch graphic for decorative section dividers (optional)
+- legacy-ascend-sun.png       — sun/moon mark used in the nav
+- legacy-ascend-arch.png      — arch graphic used as a decorative section divider
+- legacy-ascend-wordmark.png  — "LEGACY LIFE COACHING" wordmark (available; nav currently uses Cormorant text)
