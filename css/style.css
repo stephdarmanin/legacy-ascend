@@ -58,13 +58,12 @@ img { max-width: 100%; display: block; }
   color: var(--cream);
 }
 .nav-logo-mark {
-  width: 32px; height: 32px;
+  width: 36px; height: 36px;
   display: inline-block;
-  background-image: url('../assets/logos/legacy-ascend-submark.svg');
+  background-image: url('../assets/logos/legacy-ascend-sun.png');
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
-  /* fallback if image missing */
   background-color: transparent;
 }
 .nav-logo-text {
@@ -324,10 +323,14 @@ section { padding: 120px 56px; position: relative; }
 .arch-divider {
   display: flex;
   justify-content: center;
-  padding: 40px 0;
-  opacity: 0.6;
+  padding: 32px 0 8px;
 }
-.arch-divider img { width: 40px; height: auto; }
+.arch-divider img {
+  width: 56px;
+  height: auto;
+  opacity: 0.75;
+}
+.arch-divider.on-dark img { opacity: 0.55; }
 
 /* ============ PROBLEM SECTION (cream) ============ */
 .problem-section { background: var(--cream); color: var(--teal-deep); }
