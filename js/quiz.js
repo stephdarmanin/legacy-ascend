@@ -1,4 +1,4 @@
-// Legacy Life Coaching — Lead capture quiz
+// Legacy Ascend — Lead capture quiz
 (function () {
   const QUESTIONS = [
     {
@@ -44,7 +44,7 @@
       eyebrow: 'Your Result',
       title: 'The Strategic Executive',
       body: "You know where you're going. What you need is precision — sharper positioning, a strategic search, and someone who can compress the timeline. The Executive Track is built exactly for this moment.",
-      rec: { name: 'The Executive Track', price: '$750 – $1,200 AUD', href: 'career.html' },
+      rec: { name: 'The Executive Track', price: '$800 – $1,400 AUD', href: 'career.html' },
     },
     B: {
       eyebrow: 'Your Result',

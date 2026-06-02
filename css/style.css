@@ -1271,3 +1271,182 @@ section { padding: 120px 56px; position: relative; }
   .quiz-email-input-row { flex-direction: column; }
   .quiz-email-input-row .btn-primary { width: 100%; justify-content: center; }
 }
+
+/* ============================================================
+   LEGACY ASCEND — 2026 brief additions
+   (white nav mark, cinematic hero, footer social/legal, shop,
+    full testimonials, legal pages, speaking topics, media)
+   ============================================================ */
+
+/* ----- White sun/moon nav mark (brief: must be white, not aqua) ----- */
+.nav-logo-mark { filter: brightness(0) invert(1); }
+
+/* ----- Cinematic full-bleed hero (Concept C: video + sun overlay) ----- */
+.hero-cinematic {
+  position: relative;
+  min-height: 100vh;
+  display: flex; align-items: center; justify-content: center;
+  text-align: center;
+  padding: 160px 24px 100px;
+  background: linear-gradient(160deg, #0d2a33 0%, #123642 48%, #1a4a5a 100%);
+  overflow: hidden;
+}
+.hero-video {
+  position: absolute; inset: 0;
+  width: 100%; height: 100%;
+  object-fit: cover; z-index: 0; opacity: 0.45;
+}
+.hero-cinematic::after {
+  content: ''; position: absolute; inset: 0; z-index: 1;
+  background: radial-gradient(ellipse at center, rgba(13,42,51,0.20) 0%, rgba(13,42,51,0.78) 100%);
+  pointer-events: none;
+}
+.hero-sun {
+  position: absolute; z-index: 1;
+  top: 50%; left: 50%; transform: translate(-50%, -50%);
+  width: min(640px, 80vw); height: auto;
+  opacity: 0.08;
+  filter: brightness(0) invert(1);
+  pointer-events: none;
+}
+.hero-cinematic .hero-inner { position: relative; z-index: 2; max-width: 920px; }
+.hero-cinematic .hero-eyebrow { color: var(--brown-bright); justify-content: center; }
+.hero-cinematic .hero-eyebrow::before { background: var(--brown-bright); }
+.hero-cinematic h1 {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: clamp(40px, 6vw, 82px);
+  line-height: 1.04; color: var(--cream);
+  font-weight: 400; letter-spacing: -0.02em; margin-bottom: 26px;
+}
+.hero-cinematic h1 em { font-style: italic; color: var(--brown-bright); font-weight: 400; }
+.hero-cinematic .hero-sub { color: rgba(245,240,232,0.85); margin: 0 auto 40px; }
+.hero-cinematic .hero-ctas { justify-content: center; }
+.hero-cinematic .hero-proof { justify-content: center; margin-top: 56px; }
+.hero-cinematic .hero-proof-number { color: var(--brown-bright); }
+.hero-cinematic .hero-proof-label { color: rgba(245,240,232,0.6); }
+
+/* ----- Card separation on dark backgrounds (brief: stop top of cards blending) ----- */
+.card { border: 1px solid rgba(13,42,51,0.06); }
+.section-dark .card,
+body.theme-dark .card { box-shadow: 0 12px 40px rgba(0,0,0,0.38); }
+.section-dark .card:hover,
+body.theme-dark .card:hover { box-shadow: 0 22px 55px rgba(0,0,0,0.45); }
+/* brown frame on Breakthrough card (brief) */
+.card.framed { border: 2px solid var(--brown); }
+
+/* ----- Footer: social + legal links ----- */
+.footer-social { display: flex; justify-content: center; gap: 24px; flex-wrap: wrap; margin-bottom: 22px; }
+.footer-social a {
+  color: rgba(245,240,232,0.75); text-decoration: none;
+  font-size: 11px; letter-spacing: 0.18em; text-transform: uppercase;
+  transition: color 0.25s ease;
+}
+.footer-social a:hover { color: var(--brown-bright); }
+.footer-legal { display: flex; justify-content: center; gap: 20px; flex-wrap: wrap; margin-bottom: 24px; }
+.footer-legal a {
+  color: rgba(245,240,232,0.5); text-decoration: none;
+  font-size: 11px; letter-spacing: 0.12em; text-transform: uppercase;
+  transition: color 0.25s ease;
+}
+.footer-legal a:hover { color: var(--brown-bright); }
+
+/* ----- Shop page ----- */
+.shop-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; }
+.shop-card {
+  background: var(--cream); color: var(--teal-deep);
+  border-radius: 8px; overflow: hidden;
+  box-shadow: 0 8px 28px rgba(0,0,0,0.16);
+  display: flex; flex-direction: column;
+  text-decoration: none;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.shop-card:hover { transform: translateY(-5px); box-shadow: 0 18px 44px rgba(0,0,0,0.26); }
+.shop-card.feature { grid-column: 1 / -1; flex-direction: row; }
+.shop-card-img {
+  background: linear-gradient(135deg, var(--teal) 0%, var(--teal-deep) 60%, var(--teal-darker) 100%);
+  display: flex; align-items: center; justify-content: center;
+  aspect-ratio: 1 / 1; overflow: hidden;
+}
+.shop-card.feature .shop-card-img { flex: 1 1 56%; aspect-ratio: auto; min-height: 320px; }
+.shop-card-img img { width: 100%; height: 100%; object-fit: cover; }
+.shop-card-img .placeholder-logo { width: 88px; filter: brightness(0) invert(1); opacity: 0.9; }
+.shop-card-body { padding: 24px 26px 28px; display: flex; flex-direction: column; gap: 9px; flex: 1; }
+.shop-card.feature .shop-card-body { flex: 1 1 44%; justify-content: center; padding: 40px 44px; }
+.shop-card-format { font-size: 10px; letter-spacing: 0.22em; text-transform: uppercase; color: var(--brown); font-weight: 600; }
+.shop-card-title { font-family: 'Cormorant Garamond', serif; font-size: 26px; color: var(--teal-deep); font-weight: 500; line-height: 1.1; }
+.shop-card.feature .shop-card-title { font-size: 38px; }
+.shop-card-price { font-family: 'Cormorant Garamond', serif; font-size: 22px; color: var(--brown); font-weight: 600; }
+.shop-card-desc { font-size: 14px; color: rgba(18,54,66,0.75); line-height: 1.55; }
+.shop-card-cta { margin-top: 14px; align-self: flex-start; }
+
+/* ----- Full testimonials grid (Work With Me / Career) ----- */
+.testi-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 24px; max-width: 1100px; margin: 0 auto; }
+.testi-card {
+  background: #fff; border: 1px solid rgba(139,94,60,0.15);
+  border-radius: 8px; padding: 28px 30px;
+  box-shadow: 0 8px 28px rgba(18,54,66,0.06);
+  display: flex; flex-direction: column; gap: 16px;
+}
+.testi-quote { font-family: 'Cormorant Garamond', serif; font-style: italic; font-size: 18px; line-height: 1.55; color: var(--teal-deep); }
+.testi-attr { font-size: 11px; letter-spacing: 0.2em; text-transform: uppercase; color: var(--brown); font-weight: 600; margin-top: auto; }
+.section-dark .testi-card { background: rgba(245,240,232,0.04); border-color: rgba(245,240,232,0.12); }
+.section-dark .testi-quote { color: var(--cream); }
+.section-dark .testi-attr { color: var(--brown-bright); }
+
+/* featured single testimonial (Corporate — William Lewis) */
+.featured-testi {
+  max-width: 920px; margin: 0 auto 48px;
+  background: var(--teal-deep); color: var(--cream);
+  border-radius: 8px; padding: 52px 48px; text-align: center;
+  border: 1px solid rgba(139,94,60,0.3);
+}
+.featured-testi .testi-quote { color: var(--cream); font-size: clamp(22px, 2.4vw, 30px); margin-bottom: 24px; }
+.featured-testi .testi-attr { color: var(--brown-bright); }
+
+/* ----- Legal / prose pages ----- */
+.legal-page { padding: 160px 24px 100px; background: var(--cream); }
+.legal-inner { max-width: 800px; margin: 0 auto; }
+.legal-inner h1 { font-family: 'Cormorant Garamond', serif; font-size: clamp(36px, 5vw, 56px); color: var(--teal-deep); font-weight: 400; margin-bottom: 10px; letter-spacing: -0.02em; }
+.legal-meta { font-size: 12px; letter-spacing: 0.18em; text-transform: uppercase; color: var(--brown); margin-bottom: 28px; }
+.legal-note { background: rgba(139,94,60,0.08); border-left: 3px solid var(--brown); padding: 16px 20px; font-size: 14px; color: rgba(18,54,66,0.8); margin-bottom: 40px; border-radius: 0 6px 6px 0; }
+.legal-inner h2 { font-family: 'Cormorant Garamond', serif; font-size: 26px; color: var(--teal-deep); margin: 36px 0 14px; font-weight: 600; }
+.legal-inner h3 { font-size: 17px; color: var(--brown-dark); margin: 24px 0 10px; font-weight: 600; }
+.legal-inner p, .legal-inner li { font-size: 15px; line-height: 1.7; color: rgba(18,54,66,0.85); margin-bottom: 14px; }
+.legal-inner ul { padding-left: 22px; margin-bottom: 18px; }
+.legal-inner a { color: var(--brown); }
+
+/* ----- Speaking topics ----- */
+.topic-group-label { font-size: 11px; letter-spacing: 0.22em; text-transform: uppercase; color: var(--brown); font-weight: 600; margin: 28px 0 12px; }
+.section-dark .topic-group-label { color: var(--brown-bright); }
+.topic-list { list-style: none; display: flex; flex-wrap: wrap; gap: 10px; margin-bottom: 8px; }
+.topic-list li { background: rgba(139,94,60,0.08); border: 1px solid rgba(139,94,60,0.28); border-radius: 100px; padding: 8px 16px; font-size: 13px; color: var(--teal-deep); }
+.section-dark .topic-list li { background: rgba(245,240,232,0.06); border-color: rgba(245,240,232,0.18); color: var(--cream); }
+
+/* ----- Media page ----- */
+.media-books { display: grid; grid-template-columns: repeat(2, 1fr); gap: 22px; margin-top: 24px; }
+.media-book { display: flex; gap: 18px; background: #fff; border: 1px solid rgba(139,94,60,0.15); border-radius: 8px; padding: 20px; }
+.media-book-cover { width: 64px; flex-shrink: 0; background: var(--teal-deep); display: flex; align-items: center; justify-content: center; border-radius: 4px; min-height: 90px; }
+.media-book-cover .placeholder-logo { width: 32px; filter: brightness(0) invert(1); opacity: 0.85; }
+.media-book h3 { font-family: 'Cormorant Garamond', serif; font-size: 20px; color: var(--teal-deep); margin-bottom: 6px; font-weight: 600; line-height: 1.2; }
+.media-book a { color: var(--brown); font-size: 12px; font-weight: 600; text-decoration: none; letter-spacing: 0.1em; text-transform: uppercase; }
+.media-book a:hover { color: var(--brown-bright); }
+.media-cols { display: grid; grid-template-columns: repeat(3, 1fr); gap: 28px; margin-top: 24px; }
+.media-col h3 { font-family: 'Cormorant Garamond', serif; font-size: 24px; color: var(--brown); margin-bottom: 14px; font-weight: 600; }
+.media-col ul { list-style: none; }
+.media-col li { padding: 12px 0; border-top: 1px solid rgba(26,74,90,0.12); font-size: 14px; line-height: 1.5; }
+.media-col li a { color: var(--teal-deep); text-decoration: none; }
+.media-col li a:hover { color: var(--brown); }
+
+/* ----- "Looking for career coaching?" — larger per brief ----- */
+.hidden-link.lg { font-size: 16px; letter-spacing: 0.04em; text-transform: none; }
+
+/* ----- Responsive for new components ----- */
+@media (max-width: 900px) {
+  .shop-grid { grid-template-columns: 1fr; }
+  .shop-card.feature { flex-direction: column; }
+  .shop-card.feature .shop-card-img { min-height: 220px; }
+  .testi-grid { grid-template-columns: 1fr; }
+  .media-books { grid-template-columns: 1fr; }
+  .media-cols { grid-template-columns: 1fr; gap: 36px; }
+  .hero-cinematic .hero-proof { gap: 28px; }
+}

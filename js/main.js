@@ -1,4 +1,4 @@
-// Legacy Life Coaching — global behaviors
+// Legacy Ascend — global behaviors
 (function () {
   const nav = document.querySelector('.nav');
   const toggle = document.querySelector('.nav-toggle');
@@ -49,7 +49,7 @@
       const url = el.getAttribute('data-calendly-url');
       if (!url) {
         e.preventDefault();
-        console.warn('[Legacy Life Coaching] Calendly URL not yet configured. Set data-calendly-url on the booking button.');
+        console.warn('[Legacy Ascend] Calendly URL not yet configured. Set data-calendly-url on the booking button.');
         alert('Booking system is being finalised. Please email hello@stephdarmanin.com to book your discovery call.');
       }
     });

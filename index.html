@@ -3,25 +3,33 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>Legacy Life Coaching — Steph Darmanin | Executive & Performance Coaching</title>
-<meta name="description" content="Private executive and life coaching for professionals who want more than a title change. Built around outcomes, not platitudes." />
+<title>Legacy Ascend — Steph Darmanin | Performance Coaching & Corporate Workshops</title>
+<meta name="description" content="Performance coaching and corporate workshops for leaders who want more. Stop waiting to feel ready. Start building what lasts." />
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="css/style.css">
+<link rel="icon" type="image/jpeg" href="assets/logos/legacy-ascend-icon.jpg">
+<link rel="apple-touch-icon" href="assets/logos/legacy-ascend-icon.jpg">
+<meta property="og:title" content="Legacy Ascend — Steph Darmanin">
+<meta property="og:description" content="Performance coaching and corporate workshops for leaders who want more.">
+<meta property="og:image" content="assets/logos/legacy-ascend-icon.jpg">
+<meta property="og:type" content="website">
+<meta name="twitter:card" content="summary_large_image">
 </head>
 <body>
 
 <nav class="nav" id="nav">
-  <a class="nav-logo" href="index.html" aria-label="Legacy Life Coaching home">
+  <a class="nav-logo" href="index.html" aria-label="Legacy Ascend home">
     <span class="nav-logo-mark" aria-hidden="true"></span>
-    <span class="nav-logo-text">Legacy Life Coaching</span>
+    <span class="nav-logo-text">Legacy Ascend</span>
   </a>
   <div class="nav-right">
     <ul class="nav-links" id="nav-links">
       <li><a href="packages.html">Work With Me</a></li>
-      <li><a href="corporate.html">Corporate</a></li>
       <li><a href="speaking.html">Speaking</a></li>
+      <li><a href="corporate.html">Corporate</a></li>
+      <li><a href="shop.html">Shop</a></li>
       <li><a href="media.html">Media</a></li>
     </ul>
     <button class="nav-toggle" type="button" aria-label="Toggle navigation" aria-controls="nav-links" aria-expanded="false">
@@ -31,19 +39,29 @@
   </div>
 </nav>
 
-<section class="hero">
-  <div class="hero-content">
-    <div class="hero-eyebrow">Performance Coaching / Sydney / Australia</div>
-    <h1>
-      <span class="line">You have done</span>
-      <span class="line">the program.</span>
-      <span class="line">Now get the role —</span>
-      <span class="line">and the life — you deserve.</span>
-    </h1>
-    <p class="hero-sub">Private executive and life coaching for professionals who want more than a title change. Built around outcomes, not platitudes.</p>
+<!-- ============================================================
+  HERO (Concept C: dark, cinematic, looping background video).
+  The slow looped video is not yet supplied. Until it is, the
+  teal gradient + faint sun/moon watermark below stand in and look
+  intentional. To add the video later:
+    1. Drop the file at  assets/video/hero.mp4
+    2. Uncomment the <video> tag below.
+  See OUTSTANDING.md -> "Hero video".
+============================================================ -->
+<section class="hero-cinematic">
+  <!--
+  <video class="hero-video" autoplay muted loop playsinline poster="assets/logos/legacy-ascend-icon.jpg">
+    <source src="assets/video/hero.mp4" type="video/mp4">
+  </video>
+  -->
+  <img class="hero-sun" src="assets/logos/legacy-ascend-sun.png" alt="" aria-hidden="true">
+  <div class="hero-inner">
+    <div class="hero-eyebrow">Performance Coaching / Sydney / Australia / Global</div>
+    <h1>Stop waiting to feel ready. <em>Start building what lasts.</em></h1>
+    <p class="hero-sub">Performance coaching and corporate workshops for leaders who want more.</p>
     <div class="hero-ctas">
-      <a href="book.html" class="btn-primary on-light">Book a Discovery Call — Free →</a>
-      <a href="corporate.html" class="btn-outline">Enquire About Workshops</a>
+      <a href="book.html" class="btn-primary">Book a Discovery Call →</a>
+      <a href="corporate.html" class="btn-outline on-dark">Inquire About Workshops</a>
     </div>
     <div class="hero-proof">
       <div class="hero-proof-item">
@@ -51,25 +69,16 @@
         <div class="hero-proof-label">Private clients</div>
       </div>
       <div class="hero-proof-item">
-        <div class="hero-proof-number">4</div>
+        <div class="hero-proof-number">7</div>
         <div class="hero-proof-label">Countries served</div>
       </div>
       <div class="hero-proof-item">
-        <div class="hero-proof-number">3 wks</div>
-        <div class="hero-proof-label">First measurable shift</div>
+        <div class="hero-proof-number">4 wks</div>
+        <div class="hero-proof-label">To first measurable shift</div>
       </div>
     </div>
   </div>
-  <div class="hero-portrait">
-    <div class="portrait-frame"></div>
-    <img src="assets/images/hero-steph-navy-suit.png" alt="Steph Darmanin, executive coach, in a navy suit" onerror="this.style.display='none'; this.nextElementSibling && (this.nextElementSibling.style.display='flex');">
-    <div class="portrait-placeholder" style="display:none">Hero portrait placeholder<br>(assets/images/hero-steph-navy-suit.png)</div>
-  </div>
 </section>
-
-<div class="arch-divider" aria-hidden="true">
-  <img src="assets/logos/legacy-ascend-arch.png" alt="">
-</div>
 
 <section class="problem-section">
   <div class="container">
@@ -80,15 +89,15 @@
     <div class="problem-grid">
       <div class="problem-card reveal">
         <div class="problem-card-number">01</div>
-        <p>The senior leader who has the career, the income, the title — but privately feels hollow.</p>
+        <p>The senior leader who has the career, the income, the title — but privately feels unfulfilled, trapped, and burnt out.</p>
       </div>
       <div class="problem-card reveal" style="transition-delay: 0.1s;">
         <div class="problem-card-number">02</div>
-        <p>The professional who is everyone else's anchor, but has no anchor of their own.</p>
+        <p>The CEO who is everyone else's anchor, but has no anchor of their own.</p>
       </div>
       <div class="problem-card reveal" style="transition-delay: 0.2s;">
         <div class="problem-card-number">03</div>
-        <p>The leader who cannot remember what they actually want — and has stopped asking.</p>
+        <p>The lone wolf who is tired of going it alone, who craves connection and purpose, but doesn't know which direction to go.</p>
       </div>
     </div>
     <div class="problem-cta-wrap reveal">
@@ -101,7 +110,7 @@
   <div class="container">
     <div class="reveal">
       <div class="section-label">Work With Me</div>
-      <h2 class="section-heading">The level of support that matches <em>where you are.</em></h2>
+      <h2 class="section-heading">Find the level of support that <em>meets you where you are.</em></h2>
     </div>
     <div class="coaching-grid">
       <a href="accelerator.html" class="card reveal">
@@ -111,7 +120,7 @@
         </div>
         <div class="card-body">
           <div class="card-meta">
-            <div><span class="card-meta-label">Duration</span><span class="card-meta-value">8 weeks</span></div>
+            <div><span class="card-meta-label">Duration</span><span class="card-meta-value">2 months</span></div>
             <div style="text-align:right"><span class="card-meta-label">Investment</span><span class="card-price">$2,500</span></div>
           </div>
           <div class="card-who-label">Who it is for</div>
@@ -128,7 +137,7 @@
         </div>
         <div class="card-body">
           <div class="card-meta">
-            <div><span class="card-meta-label">Duration</span><span class="card-meta-value">12 weeks</span></div>
+            <div><span class="card-meta-label">Duration</span><span class="card-meta-value">3 months</span></div>
             <div style="text-align:right"><span class="card-meta-label">Investment</span><span class="card-price">$3,997</span></div>
           </div>
           <div class="card-who-label">Who it is for</div>
@@ -155,6 +164,32 @@
     </div>
     <div style="text-align:center; margin-top: 48px;" class="reveal">
       <a href="packages.html" class="btn-outline on-dark">See All Packages →</a>
+    </div>
+  </div>
+</section>
+
+<section style="background: var(--cream);">
+  <div class="container">
+    <div class="reveal">
+      <div class="section-label">Corporate Workshops</div>
+      <h2 class="section-heading">Equip your team to communicate with <em>authority.</em></h2>
+    </div>
+    <div class="corp-feature reveal">
+      <div>
+        <h3>Public Speaking & Presenting</h3>
+        <div class="corp-format">2-hour workshop · In-person or virtual delivery</div>
+        <div class="corp-price">AUD $3,000</div>
+        <p class="corp-desc">Built for leadership teams, sales groups, and function heads who need to show up sharper in the rooms that matter.</p>
+        <a href="corporate.html" class="corp-cta">Request a Workshop →</a>
+      </div>
+      <div>
+        <div class="corp-outcomes-label">Three measurable outcomes</div>
+        <ul class="corp-outcomes">
+          <li>A repeatable framework for presenting under pressure — no script required.</li>
+          <li>Reduced performance anxiety in board presentations, pitches, and high-stakes meetings.</li>
+          <li>Measurable improvement in team clarity, confidence, and executive presence.</li>
+        </ul>
+      </div>
     </div>
   </div>
 </section>
@@ -200,19 +235,28 @@
   <div class="container">
     <div class="reveal">
       <h2>Your legacy starts <em>now.</em></h2>
-      <a href="book.html" class="btn-primary">Book a Discovery Call — Free →</a>
+      <a href="book.html" class="btn-primary">Book a Call →</a>
     </div>
   </div>
 </section>
 
 <footer class="footer">
-  <div class="footer-wordmark">Legacy Life Coaching</div>
+  <div class="footer-wordmark">Legacy Ascend</div>
+  <div class="footer-social">
+    <a href="https://www.linkedin.com/company/legacyascend" target="_blank" rel="noopener" aria-label="LinkedIn">LinkedIn</a>
+    <a href="https://www.instagram.com/legacyascendcoaching" target="_blank" rel="noopener" aria-label="Instagram">Instagram</a>
+    <a href="https://www.youtube.com/@stephdarmanin" target="_blank" rel="noopener" aria-label="YouTube">YouTube</a>
+  </div>
   <div class="footer-contact">
     <a href="mailto:hello@stephdarmanin.com">hello@stephdarmanin.com</a>
-    <a href="tel:+61412355531">+61 412 355 531</a>
+  </div>
+  <div class="footer-legal">
+    <a href="privacy.html">Privacy Policy</a>
+    <a href="terms.html">Terms &amp; Conditions</a>
+    <a href="disclaimer.html">Website Disclaimer</a>
   </div>
   <div class="footer-meta">
-    © <span id="year">2026</span> Legacy Ascend &nbsp;·&nbsp; Prices valid through June 30, 2026 &nbsp;·&nbsp; Powered by Mindmaker AI
+    &copy; <span id="year">2026</span> Legacy Ascend &nbsp;&middot;&nbsp; Powered by MindMaker AI
   </div>
 </footer>
 
