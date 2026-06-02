@@ -1450,3 +1450,9 @@ body.theme-dark .card:hover { box-shadow: 0 22px 55px rgba(0,0,0,0.45); }
   .media-cols { grid-template-columns: 1fr; gap: 36px; }
   .hero-cinematic .hero-proof { gap: 28px; }
 }
+
+/* ----- Media 'In the press' section sits on dark teal: make text legible ----- */
+.section-dark .media-col li { color: rgba(245,240,232,0.85); border-top-color: rgba(245,240,232,0.12); }
+.section-dark .media-col li a { color: rgba(245,240,232,0.88); }
+.section-dark .media-col li a:hover { color: var(--brown-bright); }
+.section-dark .media-col h3 { color: var(--brown-bright); }
