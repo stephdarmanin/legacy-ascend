@@ -18,10 +18,10 @@ Each item says **what's needed**, **why**, and **what Claude will do** once you 
   faint sun stand in. *Hand over:* drop the file at `assets/video/hero.mp4` and tell Claude
   "turn on the hero video." (The Envato clips you liked need a paid licence first.)
 
-- [ ] **Confirm the hero look.** The brief said both "replace the banner photo with the
-  cropped headshot" *and* "use a background video with the sun over the top." We went with
-  the **video** look and put your **cropped headshot on the About page**. If you'd rather
-  the headshot be in the homepage hero, just say so — it's a quick change.
+- [x] **Confirm the hero look.** ✅ Done — the **cropped headshot** now sits framed beside the
+  copy in the homepage hero, on the cinematic teal background + sun watermark. (The brief asked
+  to "replace the banner photo with the cropped headshot"; this delivers that, while the optional
+  background-video slot stays ready for when `hero.mp4` is supplied.)
 
 - [ ] **Speaking enquiry Google Form.** *Needed:* the form's URL. *Why:* the brief says the
   Speaking page should link to a Google Form; for now its button opens an email. *Hand
@@ -90,4 +90,4 @@ Breakthrough · Start Now → Stripe on all programs · career pricing & "Execut
 rename · corporate workshop section · footer socials + legal links · phone number removed
 everywhere · Shop page · Privacy/Terms/Disclaimer/Returns pages · Media books + op-eds +
 podcasts · Speaking topics & signature talks · About page rewritten to your real bio ·
-favicon + social tags · all new image assets added.
+favicon + social tags · all new image assets added · cropped headshot framed in the homepage hero.
