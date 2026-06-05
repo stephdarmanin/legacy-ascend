@@ -40,42 +40,51 @@
 </nav>
 
 <!-- ============================================================
-  HERO (Concept C: dark, cinematic, looping background video).
-  The slow looped video is not yet supplied. Until it is, the
-  teal gradient + faint sun/moon watermark below stand in and look
-  intentional. To add the video later:
+  HERO — dark, cinematic split: the cropped headshot is framed
+  beside the copy on the teal gradient + faint sun watermark.
+  Built capped (.hero-grid max-width) so it can't reintroduce the
+  old full-width gap bug. The <video> below stays commented as an
+  optional ambient background; if added later it plays behind both
+  columns:
     1. Drop the file at  assets/video/hero.mp4
     2. Uncomment the <video> tag below.
   See OUTSTANDING.md -> "Hero video".
 ============================================================ -->
-<section class="hero-cinematic">
+<section class="hero-cinematic hero-split">
   <!--
   <video class="hero-video" autoplay muted loop playsinline poster="assets/logos/legacy-ascend-icon.jpg">
     <source src="assets/video/hero.mp4" type="video/mp4">
   </video>
   -->
   <img class="hero-sun" src="assets/logos/legacy-ascend-sun.png" alt="" aria-hidden="true">
-  <div class="hero-inner">
-    <div class="hero-eyebrow">Performance Coaching / Sydney / Australia / Global</div>
-    <h1>Stop waiting to feel ready. <em>Start building what lasts.</em></h1>
-    <p class="hero-sub">Performance coaching and corporate workshops for leaders who want more.</p>
-    <div class="hero-ctas">
-      <a href="book.html" class="btn-primary">Book a Discovery Call →</a>
-      <a href="corporate.html" class="btn-outline on-dark">Inquire About Workshops</a>
+  <div class="hero-grid">
+    <div class="hero-inner">
+      <div class="hero-eyebrow">Performance Coaching / Sydney / Australia / Global</div>
+      <h1>Stop waiting to feel ready. <em>Start building what lasts.</em></h1>
+      <p class="hero-sub">Performance coaching and corporate workshops for leaders who want more.</p>
+      <div class="hero-ctas">
+        <a href="book.html" class="btn-primary">Book a Discovery Call →</a>
+        <a href="corporate.html" class="btn-outline on-dark">Inquire About Workshops</a>
+      </div>
+      <div class="hero-proof">
+        <div class="hero-proof-item">
+          <div class="hero-proof-number">200+</div>
+          <div class="hero-proof-label">Private clients</div>
+        </div>
+        <div class="hero-proof-item">
+          <div class="hero-proof-number">7</div>
+          <div class="hero-proof-label">Countries served</div>
+        </div>
+        <div class="hero-proof-item">
+          <div class="hero-proof-number">4 wks</div>
+          <div class="hero-proof-label">To first measurable shift</div>
+        </div>
+      </div>
     </div>
-    <div class="hero-proof">
-      <div class="hero-proof-item">
-        <div class="hero-proof-number">200+</div>
-        <div class="hero-proof-label">Private clients</div>
-      </div>
-      <div class="hero-proof-item">
-        <div class="hero-proof-number">7</div>
-        <div class="hero-proof-label">Countries served</div>
-      </div>
-      <div class="hero-proof-item">
-        <div class="hero-proof-number">4 wks</div>
-        <div class="hero-proof-label">To first measurable shift</div>
-      </div>
+    <div class="hero-portrait">
+      <div class="portrait-frame"></div>
+      <img src="assets/images/steph-headshot-cropped.jpg" alt="Steph Darmanin, performance coach" width="681" height="953" decoding="async" onerror="this.style.display='none'; this.nextElementSibling && (this.nextElementSibling.style.display='flex');">
+      <div class="portrait-placeholder" style="display:none">Portrait placeholder<br>(assets/images/steph-headshot-cropped.jpg)</div>
     </div>
   </div>
 </section>

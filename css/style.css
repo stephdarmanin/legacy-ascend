@@ -1325,6 +1325,31 @@ section { padding: 120px 56px; position: relative; }
 .hero-cinematic .hero-proof-number { color: var(--brown-bright); }
 .hero-cinematic .hero-proof-label { color: rgba(245,240,232,0.6); }
 
+/* ----- Hero: framed-portrait split (cropped headshot beside the copy) ----- */
+/* Re-activates the Concept B offset frame (.hero-portrait / .portrait-frame) */
+/* inside the cinematic hero. Capped grid => no full-width gap bug (§8).      */
+.hero-cinematic.hero-split { text-align: left; }
+.hero-split .hero-grid {
+  position: relative; z-index: 2;
+  width: 100%; max-width: 1200px; margin: 0 auto;
+  display: grid; grid-template-columns: 1.1fr 0.9fr;
+  gap: clamp(32px, 5vw, 80px); align-items: center;
+}
+.hero-split .hero-inner { max-width: 620px; }
+.hero-split .hero-eyebrow { justify-content: flex-start; }
+.hero-split .hero-sub { margin-left: 0; margin-right: 0; }
+.hero-split .hero-ctas { justify-content: flex-start; }
+.hero-split .hero-proof { justify-content: flex-start; }
+.hero-split .hero-portrait img { object-position: center 20%; }
+
+@media (max-width: 900px) {
+  .hero-split .hero-grid { grid-template-columns: 1fr; gap: 44px; }
+  .hero-split .hero-portrait { order: 1; margin: 0 auto; max-width: 380px; }
+}
+@media (max-width: 480px) {
+  .hero-split .hero-portrait { max-width: 300px; }
+}
+
 /* ----- Card separation on dark backgrounds (brief: stop top of cards blending) ----- */
 .card { border: 1px solid rgba(13,42,51,0.06); }
 .section-dark .card,
