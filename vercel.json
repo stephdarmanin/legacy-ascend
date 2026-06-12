@@ -1,8 +1,3 @@
-Renamed back to `.html` successfully. I don't see a `vercel.json` in this listing (only `assets`, `brief`, `css`, `js`, `CLAUDE.md`, `OUTSTANDING.md`, `README.md`, plus the page `.html` files), so we need to create one.
-
-I'll create a `vercel.json` with a rewrite rule so `/linkedin-authority-reset` serves `linkedin-authority-reset.html`. Click "Add file" → "Create new file" in GitHub, name it `vercel.json`, and paste this:
-
-```json
 {
   "rewrites": [
     {
@@ -11,6 +6,3 @@ I'll create a `vercel.json` with a rewrite rule so `/linkedin-authority-reset` s
     }
   ]
 }
-```
-
-Commit to main. Vercel will redeploy automatically, then `stephdarmanin.com/linkedin-authority-reset` should serve the page correctly (no download, no `.html` in URL).
