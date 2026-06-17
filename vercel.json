@@ -7,6 +7,10 @@
     {
       "source": "/prosper-executive-coaching",
       "destination": "/prosper_coaching_5.html"
+    },
+    {
+      "source": "/career-coaching",
+      "destination": "/legacy_ascend_career_coaching_final.html"
     }
   ]
 }
