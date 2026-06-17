@@ -3,6 +3,10 @@
     {
       "source": "/linkedin-authority-reset",
       "destination": "/linkedin-authority-reset.html"
+    },
+    {
+      "source": "/prosper-executive-coaching",
+      "destination": "/prosper-executive-coaching.html"
     }
   ]
 }
