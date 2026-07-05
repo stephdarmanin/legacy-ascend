@@ -12,5 +12,12 @@
       "source": "/career-coaching",
       "destination": "/legacy_ascend_career_coaching_final.html"
     }
+  ],
+  "redirects": [
+    {
+      "source": "/",
+      "destination": "/prosper-executive-coaching",
+      "permanent": false
+    }
   ]
 }
