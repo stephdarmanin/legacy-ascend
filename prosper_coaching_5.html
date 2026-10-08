@@ -349,8 +349,10 @@
     margin-top: 60px;
   }
   .result-box {
-    background: rgba(10,61,61,0.18);
-    border: 1px solid rgba(201,168,76,0.1);
+    position: relative;
+    background: linear-gradient(160deg, rgba(14,74,69,0.3) 0%, rgba(10,61,61,0.14) 100%);
+    border: 1px solid rgba(201,168,76,0.3);
+    box-shadow: 0 2px 18px rgba(0,0,0,0.35), inset 0 1px 0 rgba(224,188,106,0.12);
     padding: 44px 40px;
     transition: transform 0.35s ease, box-shadow 0.35s ease, border-color 0.35s ease, background 0.3s ease;
   }
@@ -361,12 +363,16 @@
     background: rgba(20,80,75,0.42);
     z-index: 2;
   }
+  .result-box::before {
+    content: ''; position: absolute; left: 0; top: 0; width: 100%; height: 2px;
+    background: linear-gradient(90deg, rgba(201,168,76,0), rgba(201,168,76,0.75), rgba(201,168,76,0));
+  }
   .result-heading {
     font-family: 'Cormorant Garamond', serif;
     font-size: 22px; font-weight: 500;
-    color: var(--gold); margin-bottom: 14px; line-height: 1.2;
+    color: var(--gold2); margin-bottom: 14px; line-height: 1.2;
   }
-  .result-body { font-family: 'Inter', sans-serif; font-size: 15px; font-weight: 300; line-height: 1.85; color: rgba(244,237,208,0.78); }
+  .result-body { font-family: 'Inter', sans-serif; font-size: 15px; font-weight: 300; line-height: 1.85; color: rgba(244,237,208,0.9); }
 
   /* ── WHY STEPH ── */
   .why-section { background: #060c0c; }
