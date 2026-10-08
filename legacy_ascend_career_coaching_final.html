@@ -117,6 +117,16 @@
   .compass-section .compass-col{justify-content:center;}
   .compass-section svg{width:160px !important;height:160px !important;}
 }
+
+.scue{position:absolute;left:50%;bottom:28px;transform:translateX(-50%);display:flex;flex-direction:column;align-items:center;gap:10px;background:none;border:0;cursor:pointer;padding:8px 12px;opacity:0;animation:scueIn 1.2s ease 2.2s forwards;}
+.scue span{font-family:'Montserrat',sans-serif;font-size:9px;font-weight:500;letter-spacing:4px;text-transform:uppercase;color:rgba(201,168,76,0.75);padding-left:4px;}
+.scue i{display:block;width:1px;height:38px;background:linear-gradient(to bottom,rgba(201,168,76,0),rgba(201,168,76,0.8));position:relative;overflow:hidden;}
+.scue i::after{content:'';position:absolute;left:0;top:-14px;width:1px;height:14px;background:#f4ede0;animation:scueDrop 2.4s ease-in-out infinite;}
+@keyframes scueIn{to{opacity:1;}}
+@keyframes scueDrop{0%{top:-14px;opacity:0;}30%{opacity:1;}100%{top:38px;opacity:0;}}
+@supports(height:100svh){.hero{min-height:100svh;}}
+@media(max-width:680px){.hero{padding:64px 40px 128px;}}
+@media(prefers-reduced-motion:reduce){.scue{animation:scueIn .01s forwards;}.scue i::after{animation:none;display:none;}}
 </style>
 
 <div class="B">
@@ -127,6 +137,7 @@
   <div class="hl"></div>
   <p class="htag serif">Legacy isn't what you leave behind.<br>It's how you show up every single day.</p>
   <button class="hcta" onclick="document.getElementById('pkgs').scrollIntoView({behavior:'smooth'})">View Coaching Packages</button>
+  <button class="scue" aria-label="Scroll down" onclick="document.querySelector('.hero').nextElementSibling.scrollIntoView({behavior:'smooth'})"><span>Scroll</span><i></i></button>
 </div>
 
 <div class="sw" style="background:#0a0a0a;"><div class="sec">
