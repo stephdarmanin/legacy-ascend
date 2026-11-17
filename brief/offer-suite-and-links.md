@@ -19,8 +19,8 @@ site, this is what it should match. Source: Steph's "Legacy Ascend Full Offer Su
 
 | Offer | Price (AUD) | Duration | Booking link |
 |---|---|---|---|
-| **Discovery Call** | Free | 30 min* | https://calendly.com/legacylifecoaching/discovery |
-| **Activation Hour** | $150 | 1 session | https://calendly.com/legacylifecoaching/activate |
+| **Discovery Call** | Free | 30 min* | https://calendly.com/legacyascend/discovery |
+| **Activation Hour** | $150 | 1 session | https://calendly.com/legacyascend/activate |
 | **The Breakthrough** *(New)* | $1,500 | 30 days | https://buy.stripe.com/4gM6oJajE94l8zF1YigrS0c |
 
 \* The homepage brief says "30-minute discovery call"; the Full Offer Suite says
@@ -30,7 +30,7 @@ site, this is what it should match. Source: Steph's "Legacy Ascend Full Offer Su
 
 | Offer | Price (AUD) | Sessions | Booking link |
 |---|---|---|---|
-| **LinkedIn Authority Reset + Strategy Session** | $500 | 1 × 45 min | https://calendly.com/legacylifecoaching/linkedin |
+| **LinkedIn Authority Reset + Strategy Session** | $500 | 1 × 45 min | https://calendly.com/legacyascend/linkedin |
 | **The Executive Track** | $800 | 3 sessions | https://buy.stripe.com/6oU28tbnIbctaHN9qKgrS07 |
 | **The Executive Edge** *(was "Executive Track Advanced")* | $1,400 | 5 sessions | https://buy.stripe.com/5kQaEZ8bwcgx5ntdH0grS08 |
 
